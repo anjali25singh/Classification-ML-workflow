@@ -48,6 +48,6 @@ print("Recall   :", recall_score(y_test, y_pred))
 print("F1 Score :", f1_score(y_test, y_pred))
 print("ROC-AUC  :", roc_auc_score(y_test, y_prob))
 
-# 12. Save model (deployment ke liye)
+# 12. Save model
 joblib.dump(model, "model.pkl")
 joblib.dump(scaler, "scaler.pkl")
